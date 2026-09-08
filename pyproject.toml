@@ -1,0 +1,30 @@
+[project]
+name = "envloaderforai"
+version = "0.1.0"
+description = "Env loader that keeps secrets outside the project directory so AI agents can't see them"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Harun Korkmaz" }]
+keywords = ["dotenv", "env", "secrets", "ai", "agent", "security", "pydantic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dotenv = ["python-dotenv>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/theharuun/envloaderforai"
+Issues = "https://github.com/theharuun/envloaderforai/issues"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
