@@ -26,5 +26,8 @@ Issues = "https://github.com/theharuun/envloaderforai/issues"
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["envloaderforai"]
+
+[tool.setuptools.package-dir]
+"" = "src"
