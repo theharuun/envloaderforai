@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "envloaderforai"
 version = "0.1.0"
@@ -22,18 +26,5 @@ dotenv = ["python-dotenv>=1.0"]
 Homepage = "https://github.com/theharuun/envloaderforai"
 Issues = "https://github.com/theharuun/envloaderforai/issues"
 
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-packages = ["envloaderforai"]
-
-[tool.setuptools.package-dir]
-"" = "src"
-
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.setuptools.package-data]
-"*" = ["*"]
